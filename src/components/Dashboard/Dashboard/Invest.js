@@ -1,4 +1,8 @@
 import React from 'react'
+import uni from '../../../images/uniliver.png';
+import tesla from '../../../images/tesla.png';
+import monstar from '../../../images/monster.png';
+import mcd from '../../../images/mcdonalds.png';
 
 const Invest = () => {
   return (
@@ -12,7 +16,7 @@ const Invest = () => {
             </span></a>
     </div>
     <div className="investment">
-        <img src="./images//uniliver.png" alt=""/>
+        <img src={uni} alt=""/>
         <h4>Uniliver</h4>
         <div className="date-time">
             <p>7 Nov 2021</p>
@@ -28,7 +32,7 @@ const Invest = () => {
         </div>
     </div>
     <div className="investment">
-        <img src="./images/tesla.png" alt=""/>
+        <img src={tesla} alt=""/>
         <h4>Tesla</h4>
         <div className="date-time">
             <p>7 Nov 2021</p>
@@ -44,7 +48,7 @@ const Invest = () => {
         </div>
     </div>
     <div className="investment">
-        <img src="./images/monster.png" alt=""/>
+        <img src={monstar} alt=""/>
         <h4>Monstar</h4>
         <div className="date-time">
             <p>7 Nov 2021</p>
@@ -60,7 +64,7 @@ const Invest = () => {
         </div>
     </div>
     <div className="investment">
-        <img src="./images/mcdonalds.png" alt=""/>
+        <img src={mcd} alt=""/>
         <h4>MacDonalds</h4>
         <div className="date-time">
             <p>7 Nov 2021</p>

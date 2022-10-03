@@ -10,8 +10,8 @@ const DashNavbar = () => {
    const [toggleMenu, setToggleMenu] = useState(false)
 
   const handleThemeChange = () => {
-    const isCurrentDark = theme === 'dark';
-    setTheme(isCurrentDark ? 'light' : 'dark');
+    const isCurrentDark = theme === 'light';
+    setTheme(isCurrentDark ? 'dark' : 'light');
   };
   const toggleNav = () => {
     setToggleMenu(!toggleMenu)
@@ -21,8 +21,7 @@ const DashNavbar = () => {
         {/* <!-- header start   --> */}
     <nav>
         <div className="container">
-        {(toggleMenu && (
-            <>
+        
             <img src={logoImg} alt="logoimg" className="logo"/>
         <div className="search-bar">
             <span className="material-icons-sharp">search</span>
@@ -43,16 +42,17 @@ const DashNavbar = () => {
                 <span className="material-icons-sharp">expand_more</span>
 
             </div>
-            
-        </div>
-        
-        </>
-        ))}
-        <button id="menu-btn" onClick={toggleNav}>
+            <button id="menu-btn" onClick={toggleNav}>
                 <span className="material-icons-sharp">
                     menu
                     </span>
             </button>
+            
+        </div>
+        
+       
+       
+        
         </div>
         
     </nav>
